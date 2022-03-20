@@ -1,22 +1,29 @@
 <html lang = "pt-br">
 <head> 
-	<title> Polum </title>
+	<title> Cathedral </title>
 	<meta charset = "UTF-8"/>
 </head>
 <body>
 
-	<background-color = "purple">
-<canvas id= "zaskar" width = "300" height = "300"> osasco </canvas>
+
+<canvas id= "cathedral" width = "1920" height = "1080"> osasco </canvas>
 
 <script>
-var ex=document.getElementById("zaskar");
-var ctx=ex.getContext('2d');
-	
-	ctx.font= "40px Arial";
-	ctx.fillText("Hello word", 150, 150, 100);
-	ctx.stroke("Hello word", 150, 150, 100);
-	
-	
+function draw() {
+	var ctx = document.getElementById('canvas').getContext('2d');
+	var img = new Image();
+	img.onload = function() {
+		ctx.drawImage(img, 0, 0 );
+		ctx.beginPath( 810, 0);
+		ctx.moveTo( 810, 1920);
+		ctx.moveto( 1080, 1920);
+		ctx.moveto( 1080, 0);
+		ctx.moveto( 810, 0);
+		ctx.fillStyle = '#572226';
+
+	};
+	img.src = 'https://imgur.com/a/zZJF1xg';
+};
 </script>
 </body>
-</html> 
+</html>
