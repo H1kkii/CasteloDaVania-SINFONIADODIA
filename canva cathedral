@@ -1,0 +1,22 @@
+<html lang = "pt-br">
+<head> 
+	<title> Polum </title>
+	<meta charset = "UTF-8"/>
+</head>
+<body>
+
+	<background-color = "purple">
+<canvas id= "zaskar" width = "300" height = "300"> osasco </canvas>
+
+<script>
+var ex=document.getElementById("zaskar");
+var ctx=ex.getContext('2d');
+	
+	ctx.font= "40px Arial";
+	ctx.fillText("Hello word", 150, 150, 100);
+	ctx.stroke("Hello word", 150, 150, 100);
+	
+	
+</script>
+</body>
+</html> 
