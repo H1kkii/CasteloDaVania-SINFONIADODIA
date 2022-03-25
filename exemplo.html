@@ -1,0 +1,147 @@
+<!DOCTYPE html/>
+<html lang = "pt-br">
+<head> 
+    <title> Cathedral </title>
+    <meta charset = "UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <style> 
+        
+        body {
+   background-image:url("img/Céu.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+        }    
+    
+    
+    
+    </style>
+
+</head>
+
+
+
+<canvas id= "cathedral" style="border: 6px solid black;"  width = "2000" height = "1080"> osasco </canvas>
+
+<script>
+var c = document.getElementById("cathedral");
+var ctx = c.getContext("2d");
+
+	
+		
+		//PAREDE
+		ctx.beginPath();
+		ctx.moveTo( 1210, 810);
+		ctx.lineTo( 1210, 600);
+		ctx.lineTo( 1360, 300);
+		ctx.lineTo( 1500, 600);
+		ctx.lineTo( 1500, 1010);
+		ctx.fillStyle = "#A9A9A9";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo( 1210, 810);
+		ctx.lineTo( 1210, 600);
+		ctx.lineTo( 1360, 300);
+		ctx.lineTo( 1500, 600);
+		ctx.lineTo( 1500, 1010);
+		ctx.strokeStyle = "#000000";
+		ctx.stroke();
+		
+		//PORTA
+		ctx.beginPath();
+		ctx.moveTo( 1310, 810);
+		ctx.lineTo( 1310, 600);
+		ctx.lineTo( 1360, 500);
+		ctx.lineTo( 1400, 600);
+		ctx.lineTo( 1400, 600);
+		ctx.lineTo( 1400, 810);
+		ctx.strokeStyle = "black";
+		ctx.stroke();
+		
+		//piso
+        ctx.beginPath( 0, 810);
+        ctx.moveTo( 2000, 810);
+        ctx.lineTo( 2000, 1080);
+        ctx.lineTo( 0, 1080);
+        ctx.lineTo( 0, 810);
+        ctx.fillStyle = "#572226";
+        ctx.fill();
+		
+		//ABERTURA PORTA
+		ctx.beginPath();
+		ctx.moveTo( 1360, 500);
+		ctx.lineTo( 1360, 810);
+		ctx.strokeStyle = "black";
+		ctx.stroke();
+	
+		
+		//Teto e contorno
+		ctx.beginPath();
+		ctx.moveTo( 1360, 300);
+		ctx.lineTo( 1760, 300);
+		ctx.lineTo( 1900, 600);
+		ctx.lineTo( 1500, 600);
+		ctx.lineTo( 1360, 300);
+		ctx.fillStyle = "#8B0000";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo( 1360, 300);
+		ctx.lineTo( 1760, 300);
+		ctx.lineTo( 1900, 600);
+		ctx.lineTo( 1500, 600);
+		ctx.lineTo( 1360, 300);
+		ctx.strokeStyle = "#000000";
+		ctx.stroke();
+		
+		//Parede lateral
+		ctx.beginPath();
+		ctx.moveTo( 1900, 600);
+		ctx.lineTo( 1900, 810);
+		ctx.lineTo( 1500, 810);
+		ctx.lineTo( 1500, 600);
+		ctx.fillStyle = "#A9A9A9";
+		ctx.fill();
+		
+		ctx.beginPath();
+		ctx.moveTo( 1900, 600);
+		ctx.lineTo( 1900, 810);
+		ctx.lineTo( 1500, 810);
+		ctx.lineTo( 1500, 600);
+		ctx.strokeStyle = "#000000";
+		ctx.stroke();
+		
+		
+			//Cruz
+		ctx.beginPath();
+		ctx.lineWidth = 10;
+		ctx.moveTo( 1364, 300);
+		ctx.lineTo( 1364, 100);
+		ctx.lineCap="round";
+		ctx.strokeStyle = "#8B4513";
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.lineWidth = 10;
+		ctx.moveTo( 1404, 150);
+		ctx.lineTo( 1324, 150);
+		ctx.strokeStyle = "#8B4513";
+		ctx.stroke();
+	
+		//Titulo com sombra
+		ctx.font = "70px Garamond";
+		ctx.fillStyle = "white";
+		ctx.shadowOffsetX = 2;
+		ctx.shadowOffsetY = 2;
+		ctx.shadowBlur = 2;
+		ctx.shadowColor = "#7FFFD4";
+		ctx.fillText('Castlevania', 50, 50);
+		
+		
+
+	
+		
+		
+</script>
+</html>
